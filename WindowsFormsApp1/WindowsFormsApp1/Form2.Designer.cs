@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bsDataSet1 = new WindowsFormsApp1.bsDataSet1();
-            this.boatBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.boatTableAdapter = new WindowsFormsApp1.bsDataSet1TableAdapters.BoatTableAdapter();
             this.boatIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.boatTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,28 +40,42 @@
             this.woodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.basePriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boatBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bsDataSet1 = new WindowsFormsApp1.bsDataSet1();
+            this.boatTableAdapter = new WindowsFormsApp1.bsDataSet1TableAdapters.BoatTableAdapter();
             this.contractTableAdapter1 = new WindowsFormsApp1.bsDataSetTableAdapters.ContractTableAdapter();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.заказыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.деталиЗаказаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.партнерыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.клиентToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.аксToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.аксессуарыЛодкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.документToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.контактыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.продавецToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boatBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -82,24 +93,10 @@
             this.basePriceDataGridViewTextBoxColumn,
             this.vATDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.boatBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(-26, 37);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(945, 416);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // bsDataSet1
-            // 
-            this.bsDataSet1.DataSetName = "bsDataSet1";
-            this.bsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // boatBindingSource
-            // 
-            this.boatBindingSource.DataMember = "Boat";
-            this.boatBindingSource.DataSource = this.bsDataSet1;
-            // 
-            // boatTableAdapter
-            // 
-            this.boatTableAdapter.ClearBeforeFill = true;
             // 
             // boatIDDataGridViewTextBoxColumn
             // 
@@ -155,6 +152,20 @@
             this.vATDataGridViewTextBoxColumn.HeaderText = "VAT";
             this.vATDataGridViewTextBoxColumn.Name = "vATDataGridViewTextBoxColumn";
             // 
+            // boatBindingSource
+            // 
+            this.boatBindingSource.DataMember = "Boat";
+            this.boatBindingSource.DataSource = this.bsDataSet1;
+            // 
+            // bsDataSet1
+            // 
+            this.bsDataSet1.DataSetName = "bsDataSet1";
+            this.bsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // boatTableAdapter
+            // 
+            this.boatTableAdapter.ClearBeforeFill = true;
+            // 
             // contractTableAdapter1
             // 
             this.contractTableAdapter1.ClearBeforeFill = true;
@@ -179,7 +190,7 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.toolStripButton1});
-            this.bindingNavigator1.Location = new System.Drawing.Point(9, 428);
+            this.bindingNavigator1.Location = new System.Drawing.Point(9, 418);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -189,6 +200,32 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(286, 25);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -222,16 +259,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -254,27 +284,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // toolStripButton1
             // 
@@ -299,10 +310,91 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(957, 105);
+            this.dataGridView2.Location = new System.Drawing.Point(960, 95);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(200, 348);
             this.dataGridView2.TabIndex = 3;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.заказыToolStripMenuItem,
+            this.деталиЗаказаToolStripMenuItem,
+            this.партнерыToolStripMenuItem,
+            this.клиентToolStripMenuItem,
+            this.аксToolStripMenuItem,
+            this.аксессуарыЛодкиToolStripMenuItem,
+            this.документToolStripMenuItem,
+            this.контактыToolStripMenuItem,
+            this.продавецToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1159, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // заказыToolStripMenuItem
+            // 
+            this.заказыToolStripMenuItem.Name = "заказыToolStripMenuItem";
+            this.заказыToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.заказыToolStripMenuItem.Text = "Заказы ";
+            this.заказыToolStripMenuItem.Click += new System.EventHandler(this.заказыToolStripMenuItem_Click);
+            // 
+            // деталиЗаказаToolStripMenuItem
+            // 
+            this.деталиЗаказаToolStripMenuItem.Name = "деталиЗаказаToolStripMenuItem";
+            this.деталиЗаказаToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.деталиЗаказаToolStripMenuItem.Text = "Детали Заказа";
+            this.деталиЗаказаToolStripMenuItem.Click += new System.EventHandler(this.деталиЗаказаToolStripMenuItem_Click);
+            // 
+            // партнерыToolStripMenuItem
+            // 
+            this.партнерыToolStripMenuItem.Name = "партнерыToolStripMenuItem";
+            this.партнерыToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.партнерыToolStripMenuItem.Text = "Партнеры ";
+            this.партнерыToolStripMenuItem.Click += new System.EventHandler(this.партнерыToolStripMenuItem_Click);
+            // 
+            // клиентToolStripMenuItem
+            // 
+            this.клиентToolStripMenuItem.Name = "клиентToolStripMenuItem";
+            this.клиентToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.клиентToolStripMenuItem.Text = "Клиент ";
+            this.клиентToolStripMenuItem.Click += new System.EventHandler(this.клиентToolStripMenuItem_Click);
+            // 
+            // аксToolStripMenuItem
+            // 
+            this.аксToolStripMenuItem.Name = "аксToolStripMenuItem";
+            this.аксToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.аксToolStripMenuItem.Text = "аксессуары";
+            this.аксToolStripMenuItem.Click += new System.EventHandler(this.аксToolStripMenuItem_Click);
+            // 
+            // аксессуарыЛодкиToolStripMenuItem
+            // 
+            this.аксессуарыЛодкиToolStripMenuItem.Name = "аксессуарыЛодкиToolStripMenuItem";
+            this.аксессуарыЛодкиToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.аксессуарыЛодкиToolStripMenuItem.Text = "аксессуары лодки ";
+            this.аксессуарыЛодкиToolStripMenuItem.Click += new System.EventHandler(this.аксессуарыЛодкиToolStripMenuItem_Click);
+            // 
+            // документToolStripMenuItem
+            // 
+            this.документToolStripMenuItem.Name = "документToolStripMenuItem";
+            this.документToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.документToolStripMenuItem.Text = "документ";
+            this.документToolStripMenuItem.Click += new System.EventHandler(this.документToolStripMenuItem_Click);
+            // 
+            // контактыToolStripMenuItem
+            // 
+            this.контактыToolStripMenuItem.Name = "контактыToolStripMenuItem";
+            this.контактыToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.контактыToolStripMenuItem.Text = "контакты";
+            this.контактыToolStripMenuItem.Click += new System.EventHandler(this.контактыToolStripMenuItem_Click);
+            // 
+            // продавецToolStripMenuItem
+            // 
+            this.продавецToolStripMenuItem.Name = "продавецToolStripMenuItem";
+            this.продавецToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.продавецToolStripMenuItem.Text = "продавец";
+            this.продавецToolStripMenuItem.Click += new System.EventHandler(this.продавецToolStripMenuItem_Click);
             // 
             // Form2
             // 
@@ -312,17 +404,21 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bindingNavigator1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bsDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boatBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,5 +455,15 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem заказыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem деталиЗаказаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem партнерыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem клиентToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem аксToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem аксессуарыЛодкиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem документToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem контактыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem продавецToolStripMenuItem;
     }
 }

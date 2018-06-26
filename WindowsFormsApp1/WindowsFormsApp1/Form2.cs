@@ -52,9 +52,9 @@ namespace WindowsFormsApp1
              Data Source=C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\bs.mdb;Persist Security Info=False");
             conn.Open();
             OleDbDataAdapter zapros4 = new
-               OleDbDataAdapter("SELECT Boat.Mast FROM Boat WHERE oplata IN ('да');", conn);
+               OleDbDataAdapter("SELECT Boat.Model FROM Boat WHERE Mast IN (TRUE);", conn);
             OleDbCommand command = new
-                OleDbCommand("SELECT zakaz.idzak, zakaz.idcust FROM zakaz WHERE oplata IN ('да');", conn);
+                OleDbCommand("SELECT Boat.Model FROM Boat WHERE Mast IN (TRUE);", conn);
             zapros4.SelectCommand = command;
             DataTable DTzap4 = new DataTable();
             zapros4.Fill(DTzap4);
@@ -63,7 +63,61 @@ namespace WindowsFormsApp1
             dataGridView2.DataSource = BSzap4;
             //dataGridView2.Columns[0].HeaderCell.Value = "Максимальная стоимость";
             conn.Close();
-            MessageBox.Show("Оплаченные заказ");
+            MessageBox.Show("Лодки с матчтой ");
+        }
+
+        private void заказыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.ShowDialog();
+        }
+
+        private void деталиЗаказаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
+
+        private void партнерыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            f5.ShowDialog();
+        }
+
+        private void клиентToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.ShowDialog();
+        }
+
+        private void аксToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form7 f7 = new Form7();
+            f7.ShowDialog();
+        }
+
+        private void аксессуарыЛодкиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            f8.ShowDialog();
+        }
+
+        private void документToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            f9.ShowDialog();
+        }
+
+        private void контактыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form10 f10 = new Form10();
+            f10.ShowDialog();
+        }
+
+        private void продавецToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 f11 = new Form11();
+            f11.ShowDialog();
         }
     }
 }

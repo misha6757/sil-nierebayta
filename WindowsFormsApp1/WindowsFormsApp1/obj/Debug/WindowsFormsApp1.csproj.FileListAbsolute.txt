@@ -10,3 +10,12 @@ C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\Wind
 C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\bs.mdb
 C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form10.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form11.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form4.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form7.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form8.resources
+C:\Users\studkab43\Desktop\Бондарев Михаил 3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form9.resources
